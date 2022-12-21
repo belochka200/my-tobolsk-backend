@@ -7,7 +7,7 @@ from rest_framework import routers
 from events.views import EventsViewSet
 from routes.views import RoutesViewSet
 from stories.views import StoriesViewSet
-from users.views import UsersViewSet
+
 
 router = routers.DefaultRouter()
 router.register(r'events', EventsViewSet)

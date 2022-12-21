@@ -24,14 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-4alpp!*w%r0qty@k44&##1%)8*#hi6rx2%-!inq2n3n^_#fea*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG: bool = True
+DEBUG = True
 
-ALLOWED_HOSTS: list[str] = ['*']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
-INSTALLED_APPS: list[str] = [
+INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -42,10 +42,9 @@ INSTALLED_APPS: list[str] = [
     'events',
     'routes',
     'stories',
-    'users'
 ]
 
-MIDDLEWARE: list[str] = [
+MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
